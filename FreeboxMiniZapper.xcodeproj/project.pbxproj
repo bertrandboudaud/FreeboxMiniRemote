@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF498E5015B0ABEE00D2121A /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = FF498E4F15B0ABEE00D2121A /* channels.json */; };
+		FF82800315BC6F36001F9418 /* OptionsMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */; };
+		FFD2B8D315A4D8D7005180BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD2B8D215A4D8D7005180BA /* Cocoa.framework */; };
+		FFD2B8DD15A4D8D7005180BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFD2B8DB15A4D8D7005180BA /* InfoPlist.strings */; };
+		FFD2B8DF15A4D8D7005180BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD2B8DE15A4D8D7005180BA /* main.m */; };
+		FFD2B8E315A4D8D7005180BA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FFD2B8E115A4D8D7005180BA /* Credits.rtf */; };
+		FFD2B8E615A4D8D7005180BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD2B8E515A4D8D7005180BA /* AppDelegate.m */; };
+		FFD2B8E915A4D8D8005180BA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD2B8E715A4D8D8005180BA /* MainMenu.xib */; };
+		FFDC104615B5E876007717C1 /* StatusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FFDC104515B5E876007717C1 /* StatusIcon.png */; };
+		FFDC104A15B5F299007717C1 /* ChannelMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF498E4F15B0ABEE00D2121A /* channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
+		FF82800115BC6F36001F9418 /* OptionsMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsMenuItemView.h; sourceTree = "<group>"; };
+		FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsMenuItemView.m; sourceTree = "<group>"; };
+		FFD2B8CE15A4D8D7005180BA /* FreeboxMiniZapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeboxMiniZapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD2B8D215A4D8D7005180BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FFD2B8D515A4D8D7005180BA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FFD2B8D615A4D8D7005180BA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FFD2B8D715A4D8D7005180BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFD2B8DA15A4D8D7005180BA /* FreeboxMiniZapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FreeboxMiniZapper-Info.plist"; sourceTree = "<group>"; };
+		FFD2B8DC15A4D8D7005180BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFD2B8DE15A4D8D7005180BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFD2B8E015A4D8D7005180BA /* FreeboxMiniZapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreeboxMiniZapper-Prefix.pch"; sourceTree = "<group>"; };
+		FFD2B8E215A4D8D7005180BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FFD2B8E415A4D8D7005180BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFD2B8E515A4D8D7005180BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFD2B8E815A4D8D8005180BA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FFDC104515B5E876007717C1 /* StatusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusIcon.png; sourceTree = "<group>"; };
+		FFDC104815B5F299007717C1 /* ChannelMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelMenuItemView.h; sourceTree = "<group>"; };
+		FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelMenuItemView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFD2B8CB15A4D8D7005180BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD2B8D315A4D8D7005180BA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFD2B8C315A4D8D7005180BA = {
+			isa = PBXGroup;
+			children = (
+				FFD2B8D815A4D8D7005180BA /* FreeboxMiniRemote */,
+				FFD2B8D115A4D8D7005180BA /* Frameworks */,
+				FFD2B8CF15A4D8D7005180BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFD2B8CF15A4D8D7005180BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFD2B8CE15A4D8D7005180BA /* FreeboxMiniZapper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFD2B8D115A4D8D7005180BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFD2B8D215A4D8D7005180BA /* Cocoa.framework */,
+				FFD2B8D415A4D8D7005180BA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFD2B8D415A4D8D7005180BA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFD2B8D515A4D8D7005180BA /* AppKit.framework */,
+				FFD2B8D615A4D8D7005180BA /* CoreData.framework */,
+				FFD2B8D715A4D8D7005180BA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FFD2B8D815A4D8D7005180BA /* FreeboxMiniRemote */ = {
+			isa = PBXGroup;
+			children = (
+				FFDC104515B5E876007717C1 /* StatusIcon.png */,
+				FFD2B8E415A4D8D7005180BA /* AppDelegate.h */,
+				FFD2B8E515A4D8D7005180BA /* AppDelegate.m */,
+				FFD2B8E715A4D8D8005180BA /* MainMenu.xib */,
+				FFD2B8D915A4D8D7005180BA /* Supporting Files */,
+				FF498E4F15B0ABEE00D2121A /* channels.json */,
+				FFDC104815B5F299007717C1 /* ChannelMenuItemView.h */,
+				FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */,
+				FF82800115BC6F36001F9418 /* OptionsMenuItemView.h */,
+				FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */,
+			);
+			path = FreeboxMiniRemote;
+			sourceTree = "<group>";
+		};
+		FFD2B8D915A4D8D7005180BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFD2B8DA15A4D8D7005180BA /* FreeboxMiniZapper-Info.plist */,
+				FFD2B8DB15A4D8D7005180BA /* InfoPlist.strings */,
+				FFD2B8DE15A4D8D7005180BA /* main.m */,
+				FFD2B8E015A4D8D7005180BA /* FreeboxMiniZapper-Prefix.pch */,
+				FFD2B8E115A4D8D7005180BA /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFD2B8CD15A4D8D7005180BA /* FreeboxMiniZapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD2B8EC15A4D8D8005180BA /* Build configuration list for PBXNativeTarget "FreeboxMiniZapper" */;
+			buildPhases = (
+				FFD2B8CA15A4D8D7005180BA /* Sources */,
+				FFD2B8CB15A4D8D7005180BA /* Frameworks */,
+				FFD2B8CC15A4D8D7005180BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreeboxMiniZapper;
+			productName = FreeboxMiniRemote;
+			productReference = FFD2B8CE15A4D8D7005180BA /* FreeboxMiniZapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFD2B8C515A4D8D7005180BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = FFD2B8C815A4D8D7005180BA /* Build configuration list for PBXProject "FreeboxMiniZapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFD2B8C315A4D8D7005180BA;
+			productRefGroup = FFD2B8CF15A4D8D7005180BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFD2B8CD15A4D8D7005180BA /* FreeboxMiniZapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFD2B8CC15A4D8D7005180BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD2B8DD15A4D8D7005180BA /* InfoPlist.strings in Resources */,
+				FFD2B8E315A4D8D7005180BA /* Credits.rtf in Resources */,
+				FFD2B8E915A4D8D8005180BA /* MainMenu.xib in Resources */,
+				FF498E5015B0ABEE00D2121A /* channels.json in Resources */,
+				FFDC104615B5E876007717C1 /* StatusIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFD2B8CA15A4D8D7005180BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD2B8DF15A4D8D7005180BA /* main.m in Sources */,
+				FFD2B8E615A4D8D7005180BA /* AppDelegate.m in Sources */,
+				FFDC104A15B5F299007717C1 /* ChannelMenuItemView.m in Sources */,
+				FF82800315BC6F36001F9418 /* OptionsMenuItemView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFD2B8DB15A4D8D7005180BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD2B8DC15A4D8D7005180BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFD2B8E115A4D8D7005180BA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD2B8E215A4D8D7005180BA /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FFD2B8E715A4D8D8005180BA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD2B8E815A4D8D8005180BA /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFD2B8EA15A4D8D8005180BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FFD2B8EB15A4D8D8005180BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FFD2B8ED15A4D8D8005180BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FreeboxMiniRemote/FreeboxMiniZapper-Prefix.pch";
+				INFOPLIST_FILE = "FreeboxMiniRemote/FreeboxMiniZapper-Info.plist";
+				PRODUCT_NAME = FreeboxMiniZapper;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFD2B8EE15A4D8D8005180BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FreeboxMiniRemote/FreeboxMiniZapper-Prefix.pch";
+				INFOPLIST_FILE = "FreeboxMiniRemote/FreeboxMiniZapper-Info.plist";
+				PRODUCT_NAME = FreeboxMiniZapper;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFD2B8C815A4D8D7005180BA /* Build configuration list for PBXProject "FreeboxMiniZapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD2B8EA15A4D8D8005180BA /* Debug */,
+				FFD2B8EB15A4D8D8005180BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD2B8EC15A4D8D8005180BA /* Build configuration list for PBXNativeTarget "FreeboxMiniZapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD2B8ED15A4D8D8005180BA /* Debug */,
+				FFD2B8EE15A4D8D8005180BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFD2B8C515A4D8D7005180BA /* Project object */;
+}
