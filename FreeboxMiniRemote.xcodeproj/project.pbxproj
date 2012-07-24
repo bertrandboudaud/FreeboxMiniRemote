@@ -7,28 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF498E5015B0ABEE00D2121A /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = FF498E4F15B0ABEE00D2121A /* channels.json */; };
+		FF82800315BC6F36001F9418 /* OptionsMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */; };
 		FFD2B8D315A4D8D7005180BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD2B8D215A4D8D7005180BA /* Cocoa.framework */; };
 		FFD2B8DD15A4D8D7005180BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFD2B8DB15A4D8D7005180BA /* InfoPlist.strings */; };
 		FFD2B8DF15A4D8D7005180BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD2B8DE15A4D8D7005180BA /* main.m */; };
 		FFD2B8E315A4D8D7005180BA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FFD2B8E115A4D8D7005180BA /* Credits.rtf */; };
 		FFD2B8E615A4D8D7005180BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD2B8E515A4D8D7005180BA /* AppDelegate.m */; };
 		FFD2B8E915A4D8D8005180BA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD2B8E715A4D8D8005180BA /* MainMenu.xib */; };
+		FFDC104615B5E876007717C1 /* StatusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FFDC104515B5E876007717C1 /* StatusIcon.png */; };
+		FFDC104A15B5F299007717C1 /* ChannelMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FFD2B8CE15A4D8D7005180BA /* FreeboxMiniRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeboxMiniRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF498E4F15B0ABEE00D2121A /* channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
+		FF82800115BC6F36001F9418 /* OptionsMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsMenuItemView.h; sourceTree = "<group>"; };
+		FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsMenuItemView.m; sourceTree = "<group>"; };
+		FFD2B8CE15A4D8D7005180BA /* FreeboxMiniZapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeboxMiniZapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD2B8D215A4D8D7005180BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FFD2B8D515A4D8D7005180BA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FFD2B8D615A4D8D7005180BA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FFD2B8D715A4D8D7005180BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FFD2B8DA15A4D8D7005180BA /* FreeboxMiniRemote-Info.plist */ = {isa = PBXFileReference; path = "FreeboxMiniRemote-Info.plist"; sourceTree = "<group>"; };
+		FFD2B8DA15A4D8D7005180BA /* FreeboxMiniRemote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FreeboxMiniRemote-Info.plist"; sourceTree = "<group>"; };
 		FFD2B8DC15A4D8D7005180BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FFD2B8DE15A4D8D7005180BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FFD2B8E015A4D8D7005180BA /* FreeboxMiniRemote-Prefix.pch */ = {isa = PBXFileReference; path = "FreeboxMiniRemote-Prefix.pch"; sourceTree = "<group>"; };
+		FFD2B8E015A4D8D7005180BA /* FreeboxMiniRemote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreeboxMiniRemote-Prefix.pch"; sourceTree = "<group>"; };
 		FFD2B8E215A4D8D7005180BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FFD2B8E415A4D8D7005180BA /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFD2B8E415A4D8D7005180BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFD2B8E515A4D8D7005180BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FFD2B8E815A4D8D8005180BA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FFDC104515B5E876007717C1 /* StatusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusIcon.png; sourceTree = "<group>"; };
+		FFDC104815B5F299007717C1 /* ChannelMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelMenuItemView.h; sourceTree = "<group>"; };
+		FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelMenuItemView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +65,7 @@
 		FFD2B8CF15A4D8D7005180BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FFD2B8CE15A4D8D7005180BA /* FreeboxMiniRemote.app */,
+				FFD2B8CE15A4D8D7005180BA /* FreeboxMiniZapper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,10 +92,16 @@
 		FFD2B8D815A4D8D7005180BA /* FreeboxMiniRemote */ = {
 			isa = PBXGroup;
 			children = (
+				FFDC104515B5E876007717C1 /* StatusIcon.png */,
 				FFD2B8E415A4D8D7005180BA /* AppDelegate.h */,
 				FFD2B8E515A4D8D7005180BA /* AppDelegate.m */,
 				FFD2B8E715A4D8D8005180BA /* MainMenu.xib */,
 				FFD2B8D915A4D8D7005180BA /* Supporting Files */,
+				FF498E4F15B0ABEE00D2121A /* channels.json */,
+				FFDC104815B5F299007717C1 /* ChannelMenuItemView.h */,
+				FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */,
+				FF82800115BC6F36001F9418 /* OptionsMenuItemView.h */,
+				FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */,
 			);
 			path = FreeboxMiniRemote;
 			sourceTree = "<group>";
@@ -119,7 +135,7 @@
 			);
 			name = FreeboxMiniRemote;
 			productName = FreeboxMiniRemote;
-			productReference = FFD2B8CE15A4D8D7005180BA /* FreeboxMiniRemote.app */;
+			productReference = FFD2B8CE15A4D8D7005180BA /* FreeboxMiniZapper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -155,6 +171,8 @@
 				FFD2B8DD15A4D8D7005180BA /* InfoPlist.strings in Resources */,
 				FFD2B8E315A4D8D7005180BA /* Credits.rtf in Resources */,
 				FFD2B8E915A4D8D8005180BA /* MainMenu.xib in Resources */,
+				FF498E5015B0ABEE00D2121A /* channels.json in Resources */,
+				FFDC104615B5E876007717C1 /* StatusIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +185,8 @@
 			files = (
 				FFD2B8DF15A4D8D7005180BA /* main.m in Sources */,
 				FFD2B8E615A4D8D7005180BA /* AppDelegate.m in Sources */,
+				FFDC104A15B5F299007717C1 /* ChannelMenuItemView.m in Sources */,
+				FF82800315BC6F36001F9418 /* OptionsMenuItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +273,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FreeboxMiniRemote/FreeboxMiniRemote-Prefix.pch";
 				INFOPLIST_FILE = "FreeboxMiniRemote/FreeboxMiniRemote-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FreeboxMiniRemote;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -264,7 +284,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FreeboxMiniRemote/FreeboxMiniRemote-Prefix.pch";
 				INFOPLIST_FILE = "FreeboxMiniRemote/FreeboxMiniRemote-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FreeboxMiniRemote;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -288,6 +308,7 @@
 				FFD2B8EE15A4D8D8005180BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
