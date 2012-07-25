@@ -17,13 +17,14 @@
 		FFD2B8E915A4D8D8005180BA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD2B8E715A4D8D8005180BA /* MainMenu.xib */; };
 		FFDC104615B5E876007717C1 /* StatusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FFDC104515B5E876007717C1 /* StatusIcon.png */; };
 		FFDC104A15B5F299007717C1 /* ChannelMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */; };
+		FFE128FC15BFF0BB00B2D698 /* FreeboxMiniRemote.icns in Resources */ = {isa = PBXBuildFile; fileRef = FFE128FB15BFF0BB00B2D698 /* FreeboxMiniRemote.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF498E4F15B0ABEE00D2121A /* channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
 		FF82800115BC6F36001F9418 /* OptionsMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsMenuItemView.h; sourceTree = "<group>"; };
 		FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsMenuItemView.m; sourceTree = "<group>"; };
-		FFD2B8CE15A4D8D7005180BA /* FreeboxMiniZapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeboxMiniZapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD2B8CE15A4D8D7005180BA /* FreeboxMiniZapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = FreeboxMiniZapper.app; path = FreeboxMiniRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD2B8D215A4D8D7005180BA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FFD2B8D515A4D8D7005180BA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FFD2B8D615A4D8D7005180BA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -39,6 +40,8 @@
 		FFDC104515B5E876007717C1 /* StatusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusIcon.png; sourceTree = "<group>"; };
 		FFDC104815B5F299007717C1 /* ChannelMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelMenuItemView.h; sourceTree = "<group>"; };
 		FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelMenuItemView.m; sourceTree = "<group>"; };
+		FFE128F615BFE97A00B2D698 /* FreeboxMiniRemote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FreeboxMiniRemote.entitlements; sourceTree = "<group>"; };
+		FFE128FB15BFF0BB00B2D698 /* FreeboxMiniRemote.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = FreeboxMiniRemote.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 		FFD2B8D815A4D8D7005180BA /* FreeboxMiniRemote */ = {
 			isa = PBXGroup;
 			children = (
+				FFE128FB15BFF0BB00B2D698 /* FreeboxMiniRemote.icns */,
+				FFE128F615BFE97A00B2D698 /* FreeboxMiniRemote.entitlements */,
 				FFDC104515B5E876007717C1 /* StatusIcon.png */,
 				FFD2B8E415A4D8D7005180BA /* AppDelegate.h */,
 				FFD2B8E515A4D8D7005180BA /* AppDelegate.m */,
@@ -173,6 +178,7 @@
 				FFD2B8E915A4D8D8005180BA /* MainMenu.xib in Resources */,
 				FF498E5015B0ABEE00D2121A /* channels.json in Resources */,
 				FFDC104615B5E876007717C1 /* StatusIcon.png in Resources */,
+				FFE128FC15BFF0BB00B2D698 /* FreeboxMiniRemote.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
