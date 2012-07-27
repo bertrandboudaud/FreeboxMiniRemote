@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ChannelMenuItemView.h"
 #import "OptionsMenuItemView.h"
+#import "QuitMenuItemView.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,7 @@
 @synthesize optionsWindow;
 @synthesize freeboxCodeTextEdit;
 @synthesize optionMenuItem;
+@synthesize quitMenuItem;
 @synthesize filteredChannels;
 @synthesize updateMenuInvocation;
 @synthesize updateTimer;
@@ -48,7 +50,7 @@
    [statusItem setMenu:statusMenu];
    NSString *iconPath = [[NSBundle mainBundle] pathForResource:@"StatusIcon" ofType:@"png"];
    NSImage *icon = [[NSImage alloc] initWithContentsOfFile:iconPath];
-   [statusItem setImage:icon]; 
+   [statusItem setImage:icon];
    [statusItem setHighlightMode:YES];
    [statusItem setMenu:nil];
    [statusItem setAction:@selector(showMenu:)];
@@ -75,13 +77,17 @@
    
    selectedMenuItemIndex = 0;
    
+   int width = [mainMenuItem bounds].size.width;
+   
    // set option menu item to a custom view
-   int width = [mainMenuItem bounds].size.width; 
-   NSMenuItem *channelItemTest = [[NSMenuItem alloc] initWithTitle:@"Options" action:@selector(selectChannel:) keyEquivalent:@""];
    OptionsMenuItemView * optionView = [[OptionsMenuItemView alloc] initWithFrame:CGRectMake(0, 0, width , 20)];
    optionMenuItem.view = optionView;
    optionView.menuItem = optionMenuItem;
-   [channelItemTest setEnabled:FALSE];
+   
+   // set quit menu item to a custom view
+   QuitMenuItemView * quitView = [[QuitMenuItemView alloc] initWithFrame:CGRectMake(0, 0, width , 20)];
+   quitMenuItem.view = quitView;
+   quitView.menuItem = quitMenuItem;
    
    // set option window additionnal behaviors
    [freeboxCodeTextEdit setStringValue:[options valueForKey:@"freeboxcode"]];
@@ -106,7 +112,7 @@
          return true;
       case NSDownArrowFunctionKey:
          NSLog(@"Arrow down key");
-         if (selectedMenuItemIndex<([filteredChannelsMenuItems count]))
+         if (selectedMenuItemIndex<([filteredChannelsMenuItems count] + 1))
          {
             selectedMenuItemIndex++;
             [self refreshMenu];
@@ -118,7 +124,11 @@
          {
             [self showOptionsWindow];
          }
-         else 
+         else if ([self isHighlighted:quitMenuItem])
+         {
+            [self quitApp];
+         }
+         else
          {
             [self tuneSelectedChannel];
          }
@@ -134,9 +144,9 @@
    NSData *jsonChannelTxt = [[NSData alloc] initWithContentsOfFile:path];
    NSLog(@"JSon data : %lu",[jsonChannelTxt length]);
    NSError* error;
-   channels = [NSJSONSerialization 
+   channels = [NSJSONSerialization
                JSONObjectWithData:jsonChannelTxt
-               options:kNilOptions 
+               options:kNilOptions
                error:&error];
    for (id channel in channels)
    {
@@ -156,7 +166,7 @@
 {
    for (NSMenuItem * menuItem in filteredChannelsMenuItems)
    {
-      [statusMenu removeItem:menuItem]; 
+      [statusMenu removeItem:menuItem];
    }
    [filteredChannelsMenuItems removeAllObjects];
    [filteredChannels removeAllObjects];
@@ -177,10 +187,10 @@
    NSMutableURLRequest *maRequete = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:requeteString]];
    [maRequete setHTTPMethod:@"GET"];
    [maRequete setTimeoutInterval:2.0];
-   [NSURLConnection sendAsynchronousRequest:maRequete queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) 
+   [NSURLConnection sendAsynchronousRequest:maRequete queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
     {
        if ([data length] >0 && error == nil)
-       {                                 
+       {
           NSString *test = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
           NSLog(@"%@",test);
           // discard all
@@ -197,7 +207,7 @@
              [pendingCommands removeObject:currentCommand];
              [self executeCommand:currentCommand];
           }
-          else 
+          else
           {
              currentCommand = nil;
           }
@@ -218,7 +228,7 @@
       currentCommand = command;
       [self executeCommand:currentCommand];
    }
-   else 
+   else
    {
       [pendingCommands addObject:command];
    }
@@ -317,7 +327,7 @@
       for (int i=0;i<[command length];i++)
       {
          unichar digit = [command characterAtIndex:i];
-         NSString *commandPart = [[NSString alloc] initWithCharacters:&digit length:1]; 
+         NSString *commandPart = [[NSString alloc] initWithCharacters:&digit length:1];
          [self sendFreeboxCommand:commandPart];
       }
    }
@@ -331,7 +341,7 @@
       showMenuOnActivation = true;
       [NSApp activateIgnoringOtherApps:YES];
    }
-   else 
+   else
    {
       [statusItem popUpStatusItemMenu:statusMenu];
    }
@@ -354,7 +364,7 @@
 
 -(NSMenuItem *)createChannelMenuItem:title action:(SEL)action keyEquivalent:(NSString*)keyEquivalent
 {
-   int width = [mainMenuItem bounds].size.width; 
+   int width = [mainMenuItem bounds].size.width;
    NSMenuItem *channelItemTest = [[NSMenuItem alloc] initWithTitle:title action:@selector(selectChannel:) keyEquivalent:@""];
    ChannelMenuItem * channelMenuItemView = [[ChannelMenuItem alloc] initWithFrame:CGRectMake(0, 0, width , 20)];
    channelItemTest.view = channelMenuItemView;
@@ -392,13 +402,13 @@ int counter = 0;
 - (void)refreshMenu
 {
    // to update the menu, it is not enough to remove all and recreate
-   // we need to update title pof existing items, and remove the 
+   // we need to update title pof existing items, and remove the
    // remaining items.
    int current = 0;
    for (NSString* channel in filteredChannels)
    {
-      //NSString * title = [[NSString alloc] initWithFormat:@"%@ %lu",channel,counter]; counter++; 
-      NSString * title = [[NSString alloc] initWithFormat:@"%@",channel]; 
+      //NSString * title = [[NSString alloc] initWithFormat:@"%@ %lu",channel,counter]; counter++;
+      NSString * title = [[NSString alloc] initWithFormat:@"%@",channel];
       NSMenuItem *menuItem = nil;
       if (current < ([filteredChannelsMenuItems count]))
       {
@@ -406,7 +416,7 @@ int counter = 0;
          menuItem = [filteredChannelsMenuItems objectAtIndex:current];
          [menuItem setTitle:title];
       }
-      else 
+      else
       {
          // create a new item
          menuItem = [self createChannelMenuItem:title action:@selector(selectChannel:) keyEquivalent:@""];
@@ -421,13 +431,13 @@ int counter = 0;
       }
    }
    // remove remaining items
-   if ((current < nbMaxFilteredItems) && 
+   if ((current < nbMaxFilteredItems) &&
        ([filteredChannelsMenuItems count] > current ))
    {
-      int nbToRemove = [filteredChannelsMenuItems count]-current;
+      unsigned long nbToRemove = [filteredChannelsMenuItems count]-current;
       for (int i=0; i<nbToRemove; i++)
       {
-         NSMenuItem * menuItem = [filteredChannelsMenuItems objectAtIndex:current]; 
+         NSMenuItem * menuItem = [filteredChannelsMenuItems objectAtIndex:current];
          [statusMenu removeItem:menuItem];
          [filteredChannelsMenuItems removeObject:menuItem];
          //current++;
@@ -443,8 +453,14 @@ int counter = 0;
       [menuItem setTitle:@""];
       [menuItem setTitle:title];
    }
+   
+   NSString *oldValue = @"";
+   oldValue = [optionMenuItem title];
    [optionMenuItem setTitle:@""];
-   [optionMenuItem setTitle:@"Options"];
+   [optionMenuItem setTitle:oldValue];
+   oldValue = [quitMenuItem title];
+   [quitMenuItem setTitle:@""];
+   [quitMenuItem setTitle:oldValue];
    
 }
 
@@ -460,7 +476,11 @@ int counter = 0;
    {
       selectedMenuItemIndex = [filteredChannelsMenuItems count];
    }
-   else 
+   else if (menuItem==quitMenuItem)
+   {
+      selectedMenuItemIndex = [filteredChannelsMenuItems count] +1;
+   }
+   else
    {
       selectedMenuItemIndex = [filteredChannelsMenuItems indexOfObject:menuItem];
    }
@@ -472,7 +492,11 @@ int counter = 0;
    {
       return (selectedMenuItemIndex == [filteredChannelsMenuItems count]);
    }
-   else 
+   else if (menuItem==quitMenuItem)
+   {
+      return (selectedMenuItemIndex == [filteredChannelsMenuItems count] +1 );
+   }
+   else
    {
       return (selectedMenuItemIndex == [filteredChannelsMenuItems indexOfObject:menuItem]);
    }
@@ -482,6 +506,12 @@ int counter = 0;
 {
    [optionsWindow makeKeyAndOrderFront:self];
    [statusMenu cancelTracking];
+}
+
+- (void)quitApp
+{
+   NSLog(@"quitApp");
+   [NSApp terminate:self];
 }
 
 - (void)windowWillClose:(NSNotification *)notification

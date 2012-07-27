@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF2E522E15C3156900B69CB8 /* QuitMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E522D15C3156900B69CB8 /* QuitMenuItemView.m */; };
 		FF498E5015B0ABEE00D2121A /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = FF498E4F15B0ABEE00D2121A /* channels.json */; };
 		FF82800315BC6F36001F9418 /* OptionsMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */; };
 		FFD2B8D315A4D8D7005180BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD2B8D215A4D8D7005180BA /* Cocoa.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF2E522C15C3156900B69CB8 /* QuitMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuitMenuItemView.h; sourceTree = "<group>"; };
+		FF2E522D15C3156900B69CB8 /* QuitMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitMenuItemView.m; sourceTree = "<group>"; };
 		FF498E4F15B0ABEE00D2121A /* channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
 		FF82800115BC6F36001F9418 /* OptionsMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsMenuItemView.h; sourceTree = "<group>"; };
 		FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsMenuItemView.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */,
 				FF82800115BC6F36001F9418 /* OptionsMenuItemView.h */,
 				FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */,
+				FF2E522C15C3156900B69CB8 /* QuitMenuItemView.h */,
+				FF2E522D15C3156900B69CB8 /* QuitMenuItemView.m */,
 			);
 			path = FreeboxMiniRemote;
 			sourceTree = "<group>";
@@ -149,7 +154,7 @@
 		FFD2B8C515A4D8D7005180BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = FFD2B8C815A4D8D7005180BA /* Build configuration list for PBXProject "FreeboxMiniRemote" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -193,6 +198,7 @@
 				FFD2B8E615A4D8D7005180BA /* AppDelegate.m in Sources */,
 				FFDC104A15B5F299007717C1 /* ChannelMenuItemView.m in Sources */,
 				FF82800315BC6F36001F9418 /* OptionsMenuItemView.m in Sources */,
+				FF2E522E15C3156900B69CB8 /* QuitMenuItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +282,7 @@
 		FFD2B8ED15A4D8D8005180BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FreeboxMiniRemote/FreeboxMiniRemote-Prefix.pch";
 				INFOPLIST_FILE = "FreeboxMiniRemote/FreeboxMiniRemote-Info.plist";
@@ -287,6 +294,7 @@
 		FFD2B8EE15A4D8D8005180BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FreeboxMiniRemote/FreeboxMiniRemote-Prefix.pch";
 				INFOPLIST_FILE = "FreeboxMiniRemote/FreeboxMiniRemote-Info.plist";

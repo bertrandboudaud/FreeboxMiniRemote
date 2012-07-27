@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364771545.079494"
+         timestampString = "365107981.191637"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "167"
-         endingLineNumber = "167"
+         startingLineNumber = "177"
+         endingLineNumber = "177"
          landmarkName = "-controlTextDidChange:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364771545.079494"
+         timestampString = "365107981.191637"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "150"
-         endingLineNumber = "150"
+         startingLineNumber = "160"
+         endingLineNumber = "160"
          landmarkName = "-applicationDidFinishLaunching:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364826860.066238"
+         timestampString = "365107981.191637"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "381"
-         endingLineNumber = "381"
+         startingLineNumber = "391"
+         endingLineNumber = "391"
          landmarkName = "-updateMenu"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,33 +60,33 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364826860.066238"
+         timestampString = "365107981.191637"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "505"
-         endingLineNumber = "505">
+         startingLineNumber = "535"
+         endingLineNumber = "535">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364826860.066238"
+         timestampString = "365107981.191637"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "502"
-         endingLineNumber = "502">
+         startingLineNumber = "532"
+         endingLineNumber = "532">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364771131.808561"
+         timestampString = "365106979.248555"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "52"
-         endingLineNumber = "52"
+         startingLineNumber = "54"
+         endingLineNumber = "54"
          landmarkName = "-awakeFromNib"
          landmarkType = "5">
       </FileBreakpoint>
@@ -147,11 +147,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364771545.079494"
+         timestampString = "365107981.191637"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "249"
-         endingLineNumber = "249"
+         startingLineNumber = "259"
+         endingLineNumber = "259"
          landmarkName = "-searchTextChange:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -160,11 +160,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364771545.079494"
+         timestampString = "365107348.586807"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "109"
-         endingLineNumber = "109"
+         startingLineNumber = "115"
+         endingLineNumber = "115"
          landmarkName = "-control:textView:doCommandBySelector:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -186,11 +186,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364771545.079494"
+         timestampString = "365107981.191637"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "260"
-         endingLineNumber = "260"
+         startingLineNumber = "270"
+         endingLineNumber = "270"
          landmarkName = "-buttonMute:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -212,11 +212,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364771131.808561"
+         timestampString = "365106979.248555"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "44"
-         endingLineNumber = "44"
+         startingLineNumber = "46"
+         endingLineNumber = "46"
          landmarkName = "-awakeFromNib"
          landmarkType = "5">
       </FileBreakpoint>
@@ -225,12 +225,51 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FreeboxMiniRemote/AppDelegate.m"
-         timestampString = "364771183.705787"
+         timestampString = "365106979.248555"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "38"
-         endingLineNumber = "38"
+         startingLineNumber = "40"
+         endingLineNumber = "40"
          landmarkName = "-awakeFromNib"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "FreeboxMiniRemote/QuitMenuItemView.m"
+         timestampString = "365107749.685618"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "34"
+         endingLineNumber = "34"
+         landmarkName = "-mouseEntered:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "FreeboxMiniRemote/QuitMenuItemView.m"
+         timestampString = "365107823.254016"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "35"
+         endingLineNumber = "35"
+         landmarkName = "-mouseEntered:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "FreeboxMiniRemote/QuitMenuItemView.m"
+         timestampString = "365108028.179942"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "42"
+         endingLineNumber = "42"
+         landmarkName = "-mouseDown:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

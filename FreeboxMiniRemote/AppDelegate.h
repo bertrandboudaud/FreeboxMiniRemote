@@ -26,7 +26,7 @@
 @property NSTimer             *updateTimer;
 @property int                 nbMaxFilteredItems;
 @property NSMenuItem          *selectedMenuItem;
-@property int                 selectedMenuItemIndex;
+@property unsigned long       selectedMenuItemIndex;
 @property NSMutableDictionary *options;
 
 - (IBAction)buttonPGMinus:(id)sender;
@@ -43,10 +43,12 @@
 @property (unsafe_unretained) IBOutlet NSWindow *optionsWindow;
 @property (weak) IBOutlet NSTextField           *freeboxCodeTextEdit;
 @property (weak) IBOutlet NSMenuItem            *optionMenuItem;
+@property (weak) IBOutlet NSMenuItem            *quitMenuItem;
 
 - (void)refreshMenu;
 - (void)tuneSelectedChannel;
 - (void)showOptionsWindow;
+- (void)quitApp;
 - (bool)isHighlighted:(NSMenuItem*)menuItem;
 
 @end
