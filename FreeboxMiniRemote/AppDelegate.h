@@ -16,7 +16,7 @@
    NSStatusItem *          statusItem;
 }
 
-@property NSDictionary        *channels;
+@property NSMutableArray      *channels;
 @property NSMutableArray      *filteredChannels;
 @property NSMutableArray      *filteredChannelsMenuItems;
 @property NSMutableArray      *pendingCommands;

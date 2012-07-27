@@ -146,11 +146,31 @@
    NSError* error;
    channels = [NSJSONSerialization
                JSONObjectWithData:jsonChannelTxt
-               options:kNilOptions
+               options:NSJSONReadingMutableContainers
                error:&error];
    for (id channel in channels)
    {
       NSLog(@"channel: %@", [channel valueForKey:@"name"]);
+   }
+   
+   // remove double names (this removes TF1 SD ...)
+   NSMutableArray *channelNames = [[NSMutableArray alloc] init];
+   NSMutableArray *channelsToRemove = [[NSMutableArray alloc] init];
+   for (id channel in channels)
+   {
+      NSString *channelName = [channel valueForKey:@"name"];
+      if ([channelNames indexOfObject:channelName]==NSNotFound)
+      {
+         [channelNames addObject:channelName];
+      }
+      else
+      {
+         [channelsToRemove addObject:channel];
+      }
+   }
+   for (id channel in channelsToRemove)
+   {
+      [channels removeObject:channel];
    }
 }
 
