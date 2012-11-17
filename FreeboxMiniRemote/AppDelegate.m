@@ -295,6 +295,131 @@
    [self sendFreeboxCommand:@"power"];
 }
 
+- (IBAction)button1:(id)sender {
+    NSLog(@"button1");
+    [self sendFreeboxCommand:@"1"];
+}
+
+- (IBAction)button2:(id)sender {
+    NSLog(@"button2");
+    [self sendFreeboxCommand:@"2"];
+}
+
+- (IBAction)button3:(id)sender {
+    NSLog(@"button3");
+    [self sendFreeboxCommand:@"3"];
+}
+
+- (IBAction)button4:(id)sender {
+    NSLog(@"button4");
+    [self sendFreeboxCommand:@"4"];
+}
+
+- (IBAction)button5:(id)sender {
+    NSLog(@"button5");
+    [self sendFreeboxCommand:@"5"];
+}
+
+- (IBAction)button6:(id)sender {
+    NSLog(@"button6");
+    [self sendFreeboxCommand:@"6"];
+}
+
+- (IBAction)button7:(id)sender {
+    NSLog(@"button7");
+    [self sendFreeboxCommand:@"7"];
+}
+
+- (IBAction)button8:(id)sender {
+    NSLog(@"button8");
+    [self sendFreeboxCommand:@"8"];
+}
+
+- (IBAction)button9:(id)sender {
+    NSLog(@"button9");
+    [self sendFreeboxCommand:@"9"];
+}
+
+- (IBAction)button0:(id)sender {
+    NSLog(@"button0");
+    [self sendFreeboxCommand:@"0"];
+}
+
+- (IBAction)buttonBwd:(id)sender {
+    NSLog(@"buttonBwd");
+    [self sendFreeboxCommand:@"bwd"];
+}
+
+- (IBAction)buttonFwd:(id)sender {
+    NSLog(@"buttonFwd");
+    [self sendFreeboxCommand:@"fwd"];
+}
+
+- (IBAction)buttonRec:(id)sender {
+    NSLog(@"buttonRec");
+    [self sendFreeboxCommand:@"rec"];
+}
+
+- (IBAction)buttonPlay:(id)sender {
+    NSLog(@"buttonPlay");
+    [self sendFreeboxCommand:@"play"];
+}
+
+- (IBAction)buttonUp:(id)sender {
+    NSLog(@"buttonUp");
+    [self sendFreeboxCommand:@"up"];
+}
+
+- (IBAction)buttonDown:(id)sender {
+    NSLog(@"buttonDown");
+    [self sendFreeboxCommand:@"down"];
+}
+
+- (IBAction)buttonLeft:(id)sender {
+    NSLog(@"buttonLeft");
+    [self sendFreeboxCommand:@"left"];
+}
+
+- (IBAction)buttonRight:(id)sender {
+    NSLog(@"buttonRight");
+    [self sendFreeboxCommand:@"right"];
+}
+
+- (IBAction)buttonRed:(id)sender {
+    NSLog(@"buttonRed");
+    [self sendFreeboxCommand:@"red"];
+}
+
+- (IBAction)buttonGreen:(id)sender {
+    NSLog(@"buttonGreen");
+    [self sendFreeboxCommand:@"green"];
+}
+
+- (IBAction)buttonYellow:(id)sender {
+    NSLog(@"buttonYellow");
+    [self sendFreeboxCommand:@"yellow"];
+}
+
+- (IBAction)buttonBlue:(id)sender {
+    NSLog(@"buttonBlue");
+    [self sendFreeboxCommand:@"blue"];
+}
+
+- (IBAction)buttonSelect:(id)sender {
+    NSLog(@"buttonSelect");
+    [self sendFreeboxCommand:@"ok"];
+}
+
+- (IBAction)buttonFree:(id)sender {
+    NSLog(@"buttonFree");
+    [self sendFreeboxCommand:@"home"];
+}
+
+- (IBAction)buttonAV:(id)sender {
+    NSLog(@"buttonAV");
+    [self sendFreeboxCommand:@"av"];
+}
+
 - (void)menuDidClose:(NSMenu *)menu
 {
    NSLog(@"menuDidClose (active? %d)",[NSApp isActive]);
@@ -422,7 +547,7 @@ int counter = 0;
 - (void)refreshMenu
 {
    // to update the menu, it is not enough to remove all and recreate
-   // we need to update title pof existing items, and remove the
+   // we need to update title of existing items, and remove the
    // remaining items.
    int current = 0;
    for (NSString* channel in filteredChannels)
@@ -474,6 +599,7 @@ int counter = 0;
       [menuItem setTitle:title];
    }
    
+   // force a refresh
    NSString *oldValue = @"";
    oldValue = [optionMenuItem title];
    [optionMenuItem setTitle:@""];
