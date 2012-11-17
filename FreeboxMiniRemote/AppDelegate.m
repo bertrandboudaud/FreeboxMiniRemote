@@ -71,6 +71,7 @@
    [self loadChannels];
    
    [searchTextField setDelegate:self];
+   [freeboxCodeTextEdit setDelegate:self];
    [optionsWindow orderOut:nil];
    
    nbMaxFilteredItems = 10;
@@ -193,8 +194,14 @@
 }
 
 - (void)controlTextDidChange:(NSNotification *)notification {
-   NSLog(@"controlTextDidChange");
-   [self updateMenu];
+    NSLog(@"controlTextDidChange");
+    if ([notification object] == searchTextField) {
+        [self updateMenu];
+    }
+    else if ([notification object] == freeboxCodeTextEdit) {
+        [options setValue:[freeboxCodeTextEdit stringValue] forKey:@"freeboxcode"];
+        [options writeToFile:@"useroptions" atomically:YES];
+    }
 }
 
 - (void)executeCommand:(NSString *)command
