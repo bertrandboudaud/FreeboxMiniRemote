@@ -89,6 +89,9 @@
    QuitMenuItemView * quitView = [[QuitMenuItemView alloc] initWithFrame:CGRectMake(0, 0, width , 20)];
    quitMenuItem.view = quitView;
    quitView.menuItem = quitMenuItem;
+    
+    //
+    [optionsWindow setBackgroundColor:[NSColor colorWithCalibratedRed:0.45 green:0.40 blue:0.36 alpha:1.0f]];
    
    // set option window additionnal behaviors
    [freeboxCodeTextEdit setStringValue:[options valueForKey:@"freeboxcode"]];

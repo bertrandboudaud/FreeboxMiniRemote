@@ -16,9 +16,11 @@
 		FFD2B8E315A4D8D7005180BA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FFD2B8E115A4D8D7005180BA /* Credits.rtf */; };
 		FFD2B8E615A4D8D7005180BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD2B8E515A4D8D7005180BA /* AppDelegate.m */; };
 		FFD2B8E915A4D8D8005180BA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD2B8E715A4D8D8005180BA /* MainMenu.xib */; };
+		FFD894C71663CF2300FB00A3 /* FreeboxButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD894C61663CF2300FB00A3 /* FreeboxButtonCell.m */; };
 		FFDC104615B5E876007717C1 /* StatusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FFDC104515B5E876007717C1 /* StatusIcon.png */; };
 		FFDC104A15B5F299007717C1 /* ChannelMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */; };
 		FFE128FC15BFF0BB00B2D698 /* FreeboxMiniRemote.icns in Resources */ = {isa = PBXBuildFile; fileRef = FFE128FB15BFF0BB00B2D698 /* FreeboxMiniRemote.icns */; };
+		FFE8CCF21664CEFA00746CD1 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE8CCF11664CEFA00746CD1 /* blueButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,11 +42,14 @@
 		FFD2B8E415A4D8D7005180BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFD2B8E515A4D8D7005180BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FFD2B8E815A4D8D8005180BA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FFD894C51663CF2300FB00A3 /* FreeboxButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeboxButtonCell.h; sourceTree = "<group>"; };
+		FFD894C61663CF2300FB00A3 /* FreeboxButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeboxButtonCell.m; sourceTree = "<group>"; };
 		FFDC104515B5E876007717C1 /* StatusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusIcon.png; sourceTree = "<group>"; };
 		FFDC104815B5F299007717C1 /* ChannelMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelMenuItemView.h; sourceTree = "<group>"; };
 		FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelMenuItemView.m; sourceTree = "<group>"; };
 		FFE128F615BFE97A00B2D698 /* FreeboxMiniRemote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FreeboxMiniRemote.entitlements; sourceTree = "<group>"; };
 		FFE128FB15BFF0BB00B2D698 /* FreeboxMiniRemote.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = FreeboxMiniRemote.icns; sourceTree = "<group>"; };
+		FFE8CCF11664CEFA00746CD1 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,7 @@
 		FFD2B8D815A4D8D7005180BA /* FreeboxMiniRemote */ = {
 			isa = PBXGroup;
 			children = (
+				FFE8CCF11664CEFA00746CD1 /* blueButton.png */,
 				FFE128FB15BFF0BB00B2D698 /* FreeboxMiniRemote.icns */,
 				FFE128F615BFE97A00B2D698 /* FreeboxMiniRemote.entitlements */,
 				FFDC104515B5E876007717C1 /* StatusIcon.png */,
@@ -112,6 +118,8 @@
 				FF82800215BC6F36001F9418 /* OptionsMenuItemView.m */,
 				FF2E522C15C3156900B69CB8 /* QuitMenuItemView.h */,
 				FF2E522D15C3156900B69CB8 /* QuitMenuItemView.m */,
+				FFD894C51663CF2300FB00A3 /* FreeboxButtonCell.h */,
+				FFD894C61663CF2300FB00A3 /* FreeboxButtonCell.m */,
 			);
 			path = FreeboxMiniRemote;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 				FF498E5015B0ABEE00D2121A /* channels.json in Resources */,
 				FFDC104615B5E876007717C1 /* StatusIcon.png in Resources */,
 				FFE128FC15BFF0BB00B2D698 /* FreeboxMiniRemote.icns in Resources */,
+				FFE8CCF21664CEFA00746CD1 /* blueButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +208,7 @@
 				FFDC104A15B5F299007717C1 /* ChannelMenuItemView.m in Sources */,
 				FF82800315BC6F36001F9418 /* OptionsMenuItemView.m in Sources */,
 				FF2E522E15C3156900B69CB8 /* QuitMenuItemView.m in Sources */,
+				FFD894C71663CF2300FB00A3 /* FreeboxButtonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
