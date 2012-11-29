@@ -36,8 +36,8 @@
     NSColor *blueColorPlain = [NSColor colorWithCalibratedRed:0.12 green:0.67 blue:0.93 alpha:1.0f];
     NSColor *blueColorDark  = [NSColor colorWithCalibratedRed:0.06 green:0.32 blue:0.47 alpha:1.0f];
     
-    NSColor *yellowColorPlain = [NSColor colorWithCalibratedRed:0.93 green:0.90 blue:0 alpha:1.0f];
-    NSColor *yellowColorDark  = [NSColor colorWithCalibratedRed:0.47 green:0.45 blue:0 alpha:1.0f];
+    NSColor *yellowColorPlain = [NSColor colorWithCalibratedRed:0.63 green:0.70 blue:0 alpha:1.0f];
+    NSColor *yellowColorDark  = [NSColor colorWithCalibratedRed:0.30 green:0.35 blue:0 alpha:1.0f];
     
     NSColor *rightShadow;
     NSColor *leftShadow;

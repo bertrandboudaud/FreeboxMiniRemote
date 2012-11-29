@@ -20,7 +20,6 @@
 		FFDC104615B5E876007717C1 /* StatusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FFDC104515B5E876007717C1 /* StatusIcon.png */; };
 		FFDC104A15B5F299007717C1 /* ChannelMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */; };
 		FFE128FC15BFF0BB00B2D698 /* FreeboxMiniRemote.icns in Resources */ = {isa = PBXBuildFile; fileRef = FFE128FB15BFF0BB00B2D698 /* FreeboxMiniRemote.icns */; };
-		FFE8CCF21664CEFA00746CD1 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE8CCF11664CEFA00746CD1 /* blueButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +48,6 @@
 		FFDC104915B5F299007717C1 /* ChannelMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelMenuItemView.m; sourceTree = "<group>"; };
 		FFE128F615BFE97A00B2D698 /* FreeboxMiniRemote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FreeboxMiniRemote.entitlements; sourceTree = "<group>"; };
 		FFE128FB15BFF0BB00B2D698 /* FreeboxMiniRemote.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = FreeboxMiniRemote.icns; sourceTree = "<group>"; };
-		FFE8CCF11664CEFA00746CD1 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +101,6 @@
 		FFD2B8D815A4D8D7005180BA /* FreeboxMiniRemote */ = {
 			isa = PBXGroup;
 			children = (
-				FFE8CCF11664CEFA00746CD1 /* blueButton.png */,
 				FFE128FB15BFF0BB00B2D698 /* FreeboxMiniRemote.icns */,
 				FFE128F615BFE97A00B2D698 /* FreeboxMiniRemote.entitlements */,
 				FFDC104515B5E876007717C1 /* StatusIcon.png */,
@@ -192,7 +189,6 @@
 				FF498E5015B0ABEE00D2121A /* channels.json in Resources */,
 				FFDC104615B5E876007717C1 /* StatusIcon.png in Resources */,
 				FFE128FC15BFF0BB00B2D698 /* FreeboxMiniRemote.icns in Resources */,
-				FFE8CCF21664CEFA00746CD1 /* blueButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
