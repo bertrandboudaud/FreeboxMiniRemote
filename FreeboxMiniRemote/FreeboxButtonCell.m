@@ -27,21 +27,17 @@
     NSColor *freeboxColorDark = [NSColor colorWithCalibratedRed:0.36 green:0.33 blue:0.29 alpha:1.0f];
     NSColor *freeboxColorLight = [NSColor colorWithCalibratedRed:0.53 green:0.48 blue:0.42 alpha:1.0f];
 
-    NSColor *redColorPlain = [NSColor colorWithCalibratedRed:0.45 green:0.0 blue:0.0 alpha:1.0f];
-    NSColor *redColorDark = [NSColor colorWithCalibratedRed:0.36 green:0.0 blue:0.0 alpha:1.0f];
-    NSColor *redColorLight = [NSColor colorWithCalibratedRed:0.53 green:0.0 blue:0.0 alpha:1.0f];
+    NSColor *redColorPlain = [NSColor colorWithCalibratedRed:0.59 green:0.0 blue:0.02 alpha:1.0f];
+    NSColor *redColorDark  = [NSColor colorWithCalibratedRed:0.30 green:0.0 blue:0.0 alpha:1.0f];
 
-    NSColor *greenColorPlain = [NSColor colorWithCalibratedRed:0 green:0.40 blue:0 alpha:1.0f];
-    NSColor *greenColorDark = [NSColor colorWithCalibratedRed:0 green:0.33 blue:0 alpha:1.0f];
-    NSColor *greenColorLight = [NSColor colorWithCalibratedRed:0 green:0.48 blue:0 alpha:1.0f];
+    NSColor *greenColorPlain = [NSColor colorWithCalibratedRed:0.20 green:0.82 blue:0 alpha:1.0f];
+    NSColor *greenColorDark  = [NSColor colorWithCalibratedRed:0.10 green:0.43 blue:0 alpha:1.0f];
     
-    NSColor *blueColorPlain = [NSColor colorWithCalibratedRed:0 green:0 blue:0.36 alpha:1.0f];
-    NSColor *blueColorDark = [NSColor colorWithCalibratedRed:0 green:0 blue:0.29 alpha:1.0f];
-    NSColor *blueColorLight = [NSColor colorWithCalibratedRed:0 green:0 blue:0.42 alpha:1.0f];
+    NSColor *blueColorPlain = [NSColor colorWithCalibratedRed:0.12 green:0.67 blue:0.93 alpha:1.0f];
+    NSColor *blueColorDark  = [NSColor colorWithCalibratedRed:0.06 green:0.32 blue:0.47 alpha:1.0f];
     
-    NSColor *yellowColorPlain = [NSColor colorWithCalibratedRed:0.45 green:0.40 blue:0 alpha:1.0f];
-    NSColor *yellowColorDark = [NSColor colorWithCalibratedRed:0.36 green:0.33 blue:0 alpha:1.0f];
-    NSColor *yellowColorLight = [NSColor colorWithCalibratedRed:0.53 green:0.48 blue:0 alpha:1.0f];
+    NSColor *yellowColorPlain = [NSColor colorWithCalibratedRed:0.93 green:0.90 blue:0 alpha:1.0f];
+    NSColor *yellowColorDark  = [NSColor colorWithCalibratedRed:0.47 green:0.45 blue:0 alpha:1.0f];
     
     NSColor *rightShadow;
     NSColor *leftShadow;
@@ -52,14 +48,14 @@
         {
             if([self isHighlighted])
             {
-                rightShadow = redColorLight;
-                leftShadow = redColorDark;
+                rightShadow = freeboxColorLight;
+                leftShadow = freeboxColorDark;
                 buttonColor = redColorDark;
             }
             else
             {
-                rightShadow = redColorDark;
-                leftShadow = redColorLight;
+                rightShadow = freeboxColorDark;
+                leftShadow = freeboxColorLight;
                 buttonColor = redColorPlain;
             }
         }
@@ -69,14 +65,14 @@
         {
             if([self isHighlighted])
             {
-                rightShadow = greenColorLight;
-                leftShadow = greenColorDark;
+                rightShadow = freeboxColorLight;
+                leftShadow = freeboxColorDark;
                 buttonColor = greenColorDark;
             }
             else
             {
-                rightShadow = greenColorDark;
-                leftShadow = greenColorLight;
+                rightShadow = freeboxColorDark;
+                leftShadow = freeboxColorLight;
                 buttonColor = greenColorPlain;
             }
         }
@@ -86,14 +82,14 @@
         {
             if([self isHighlighted])
             {
-                rightShadow = yellowColorLight;
-                leftShadow = yellowColorDark;
+                rightShadow = freeboxColorLight;
+                leftShadow = freeboxColorDark;
                 buttonColor = yellowColorDark;
             }
             else
             {
-                rightShadow = yellowColorDark;
-                leftShadow = yellowColorLight;
+                rightShadow = freeboxColorDark;
+                leftShadow = freeboxColorLight;
                 buttonColor = yellowColorPlain;
             }
         }
@@ -103,14 +99,14 @@
         {
             if([self isHighlighted])
             {
-                rightShadow = blueColorLight;
-                leftShadow = blueColorDark;
+                rightShadow = freeboxColorLight;
+                leftShadow = freeboxColorDark;
                 buttonColor = blueColorDark;
             }
             else
             {
-                rightShadow = blueColorDark;
-                leftShadow = blueColorLight;
+                rightShadow = freeboxColorDark;
+                leftShadow = freeboxColorLight;
                 buttonColor = blueColorPlain;
             }
         }
