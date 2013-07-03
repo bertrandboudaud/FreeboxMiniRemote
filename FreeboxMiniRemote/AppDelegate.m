@@ -35,7 +35,7 @@
    
    
    // read options from file
-   options = [[NSMutableDictionary alloc] initWithContentsOfFile:@"useroptions" ];
+   options = [[NSMutableDictionary alloc] initWithContentsOfFile:[self pathForUserDataFile] ];
    if (options==nil)
    {
       // default value
@@ -203,7 +203,7 @@
     }
     else if ([notification object] == freeboxCodeTextEdit) {
         [options setValue:[freeboxCodeTextEdit stringValue] forKey:@"freeboxcode"];
-        [options writeToFile:@"useroptions" atomically:YES];
+        [options writeToFile:[self pathForUserDataFile] atomically:YES];
     }
 }
 
@@ -658,6 +658,20 @@ int counter = 0;
    }
 }
 
+
+- (NSString *)pathForUserDataFile
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *folder = @"~/Library/Application Support/FreeboxMiniRemote/";
+    folder = [folder stringByExpandingTildeInPath];
+    if ([fileManager fileExistsAtPath: folder] == NO)
+    {
+        [fileManager createDirectoryAtPath: folder attributes: nil];
+    }
+    NSString *fileName = @"useroptions";
+    return [folder stringByAppendingPathComponent: fileName];
+}
+
 - (void)showOptionsWindow
 {
    [optionsWindow makeKeyAndOrderFront:self];
@@ -674,7 +688,7 @@ int counter = 0;
 {
    NSLog(@"windowWillClose");
    [options setValue:[freeboxCodeTextEdit stringValue] forKey:@"freeboxcode"];
-   [options writeToFile:@"useroptions" atomically:YES];
+   [options writeToFile:[self pathForUserDataFile] atomically:YES];
 }
 
 @end
